@@ -1,0 +1,103 @@
+body{
+	background: #ece;
+}
+
+.container{
+	width: 600px;
+	height: 400px;
+	position: relative;
+	border: 8px solid #fff;
+	margin: 100px auto 0;
+	border-radius: 10px;
+	background: #ccc;
+	overflow: hidden;
+}
+
+#btn1{
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	top: 550px;
+	background: #333;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	left: 50%;
+	margin-left: -100px;
+}
+
+#btn2{
+	width: 300px;
+	height: 40px;
+	position: absolute;
+	top: 595px;
+	background: #333;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	left: 50%;
+	margin-left: -150px;
+}
+
+#btn:active{
+	background: #fff;
+}
+
+.img{
+	position: absolute;
+	perspective: 500px;
+}
+
+.frag{
+	width: 100px;
+	height: 400px;
+	float: left;
+	background: url('img/img7.jpg') no-repeat;
+	background-size: 600px auto;
+
+	opacity: 0;
+	z-index: 0;
+	transform-origin: center right;
+	transform: rotateY(90deg) translateZ(-100px) scale(1.5);
+	transition: transform .6s, opacity .6s, -webkit-filter 2s ease-out;
+	-webkit-filter: saturate(0) blur(10px) brightness(.4) contrast(4);
+}
+
+
+.frag2{
+	background-position: -100px 0;
+	transition-delay: .2s;
+}
+.frag3{
+	background-position: -200px 0;
+	transition-delay: .4s;
+}
+.frag4{
+	background-position: -300px 0;
+	transition-delay: .8s;
+}
+.frag5{
+	background-position: -400px 0;
+	transition-delay: .8s;
+}
+.frag6{
+	background-position: -500px 0;
+	transition-delay: 1s;
+}
+
+.start .frag
+{
+	opacity: 1;
+	z-index: 1;
+	transform: rotateY(0) translateZ(0) scale(1);
+	-webkit-filter: saturate(1) blur(0) brightness(1) contrast(1);
+}
+
+.end .frag{
+	opacity: 0;
+}
+

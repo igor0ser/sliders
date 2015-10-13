@@ -1,0 +1,47 @@
+body{
+	padding: 50px;
+}
+
+.container{
+	width: 580px;
+	height: 420px;
+	border: 5px solid red;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.img{
+	width: 580px;
+	height: 420px;
+	box-sizing: border-box;
+	float: left;
+	transition: transform 0.8s;;
+	background: #FFDAB9;
+	position: absolute;
+}
+
+.img.left{
+	transform: translateX(-580px);
+}
+
+.img.right{
+	transform: translateX(580px);
+}
+
+
+.btn{
+	margin: 30px;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	font-size: 20px;
+	padding: 20px;
+	outline: none;
+}
+
+.btn:active{
+	background: #aaa;
+	}
